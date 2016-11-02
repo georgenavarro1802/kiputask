@@ -1,1 +1,1 @@
-web: gunicorn <kipu>:kipu --log-file -
+web: gunicorn kipu:app --log-file -
