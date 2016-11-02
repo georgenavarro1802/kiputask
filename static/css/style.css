@@ -17,6 +17,11 @@ body {
     text-align: center;
 }
 
+.center {
+    text-align: center;
+    margin: auto;
+}
+
 /* Customize container */
 @media (min-width: 768px) {
     .container {

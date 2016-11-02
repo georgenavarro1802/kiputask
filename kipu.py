@@ -8,7 +8,8 @@ from vars import obj
 app = Flask(__name__)
 
 
-# router that defines path: /home and returns an html file with the main user interface
+# router that defines paths: / and /home it returns an html file with the main user interface
+@app.route('/')
 @app.route('/home')
 def home():
     return render_template("home.html")

@@ -19,10 +19,16 @@ obj = {
         },
         "controllers": [
             {
+                "decorator": "@app.route('/')",
+                "name": "def home():",
+                "content": "return render_template('home.html')",
+                "comment": "# router that defines path: / it redirects to the /home"
+            },
+            {
                 "decorator": "@app.route('/home')",
                 "name": "def home():",
                 "content": "return render_template('home.html')",
-                "comment": "# router that defines path: /home and returns an html file with the main user interface"
+                "comment": "# router that defines path: /home it returns an html file with the main user interface"
             },
             {
                 "decorator": "@app.route('/code')",
